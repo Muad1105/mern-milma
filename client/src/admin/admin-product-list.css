@@ -1,0 +1,21 @@
+.product-list-container {
+  display: flex;
+  height: 450px;
+  align-items: center;
+  gap: 30px;
+}
+.product-list-container p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-image {
+  width: 200px;
+}

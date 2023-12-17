@@ -1,0 +1,25 @@
+.service-container {
+  display: flex;
+  gap: 65px;
+  align-items: center;
+  padding: 60px 150px;
+  object-fit: contain;
+}
+
+.service-image {
+  width: 320px;
+}
+
+.service-description {
+  text-align: left;
+  width: 588px;
+  max-height: 208px;
+  left: 630px;
+  top: 808px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 36px;
+  color: #313030;
+}
