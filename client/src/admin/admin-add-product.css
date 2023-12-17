@@ -1,0 +1,26 @@
+.add-product-container {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 100px;
+  border-bottom: 2px solid grey;
+}
+.admin-add-product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.add-product-form-inputs button {
+  padding: 10px 50px;
+  font-size: 17px;
+}
+
+.add-product-form-inputs {
+  display: flex;
+  /* flex-direction: column; */
+  width: 200px;
+  gap: 20px;
+}
+
+.add-product-form-inputs input {
+  height: 35px;
+}

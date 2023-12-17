@@ -53,26 +53,30 @@ const Products = () => {
         <div className="unique-flavor-products">
           <p className="chocolate heading">Chocolate</p>
           <div className="induvidual-products-section">
-            {chocolateIceCreamData.map((e, i) => {
-              return (
-                <div
-                  className="product-details product-details-chocolate"
-                  key={e._id}
-                >
-                  <img src={`data:image/png;base64,${e.image}`} alt="" />
-                  <div className="product-description">
-                    <div className="item">
-                      <p>{e.name}</p>
-                      <p>{e.quantity}</p>
-                    </div>
-                    <div className="price">
-                      <CurrencyRupeeIcon style={{ fontSize: "14px" }} />
-                      <p>{e.price}</p>
+            {chocolateIceCreamData.length ? (
+              chocolateIceCreamData.map((e, i) => {
+                return (
+                  <div
+                    className="product-details product-details-chocolate"
+                    key={e._id}
+                  >
+                    <img src={`data:image/png;base64,${e.image}`} alt="" />
+                    <div className="product-description">
+                      <div className="item">
+                        <p>{e.name}</p>
+                        <p>{e.quantity}</p>
+                      </div>
+                      <div className="price">
+                        <CurrencyRupeeIcon style={{ fontSize: "14px" }} />
+                        <p>{e.price}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-              );
-            })}
+                );
+              })
+            ) : (
+              <p>Add chocoolate products</p>
+            )}
           </div>
         </div>
         <div className="unique-flavor-products-vanilla">

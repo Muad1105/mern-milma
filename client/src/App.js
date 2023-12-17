@@ -5,7 +5,7 @@ import "./App.css";
 import ServiceDescription from "./components/ServiceDescription";
 import ProductsList from "./components/Client";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
-import AddProduct from "./admin/AddProduct";
+import AddProduct from "./admin/AdminAddProduct";
 import DeleteProduct from "./admin/DeleteProduct";
 import Navigation from "./components/Navigation";
 import Admin from "./admin/Admin";

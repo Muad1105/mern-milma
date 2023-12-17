@@ -1,8 +1,9 @@
 // src/Admin/AddProduct.js
 import React, { useState } from "react";
 import axios from "axios";
+import "./admin-add-product.css";
 
-const AddProduct = () => {
+const AdminAddProduct = () => {
   const [product, setProduct] = useState({
     name: "",
     flavor: "",
@@ -57,56 +58,58 @@ const AddProduct = () => {
       });
   };
   return (
-    <div>
+    <div className="add-product-container">
       <h2>Add Product</h2>
       <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={product.name}
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="price"
-          placeholder="Price"
-          value={product.price}
-          onChange={handleChange}
-        />
-        <select
-          type="text"
-          name="flavor"
-          placeholder="Flavor"
-          value={product.flavor}
-          onChange={handleChange}
-        >
-          <option value="" disabled>
-            Select
-          </option>
-          <option value="vanilla">Vanilla</option>
-          <option value="pista">Pista</option>
-          <option value="chocolate">Chocolate</option>
-        </select>
-        <input
-          type="file"
-          placeholder="Image"
-          name="image"
-          onChange={handleChange}
-        />
-        <input
-          type="text"
-          name="quantity"
-          value={product.quantity}
-          placeholder="Quantity"
-          onChange={handleChange}
-        />
+        <div className="add-product-form-inputs">
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={product.name}
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="price"
+            placeholder="Price"
+            value={product.price}
+            onChange={handleChange}
+          />
+          <select
+            type="text"
+            name="flavor"
+            placeholder="Flavor"
+            value={product.flavor}
+            onChange={handleChange}
+          >
+            <option value="" disabled>
+              Select
+            </option>
+            <option value="vanilla">Vanilla</option>
+            <option value="pista">Pista</option>
+            <option value="chocolate">Chocolate</option>
+          </select>
+          <input
+            type="file"
+            placeholder="Image"
+            name="image"
+            onChange={handleChange}
+          />
+          <input
+            type="text"
+            name="quantity"
+            value={product.quantity}
+            placeholder="Quantity"
+            onChange={handleChange}
+          />
 
-        {/* Add other input fields for flavor, image, price, quantity, section */}
-        <button type="submit">Add Product</button>
+          {/* Add other input fields for flavor, image, price, quantity, section */}
+          <button type="submit">Add</button>
+        </div>
       </form>
     </div>
   );
 };
 
-export default AddProduct;
+export default AdminAddProduct;

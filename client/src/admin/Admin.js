@@ -1,6 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import AddProduct from "./AddProduct";
+import AddProduct from "./AdminAddProduct";
 import ProductList from "./AdminProductList";
 
 const Admin = () => {
