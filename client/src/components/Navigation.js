@@ -4,16 +4,11 @@ import { Link } from "react-router-dom";
 const Navigation = () => {
   return (
     <div>
-      <h1>Ice Cream Website</h1>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/user">User</Link>
-          </li>
-          <li>
-            <Link to="/admin">Admin</Link>
-          </li>
-        </ul>
+      <h1>Ice Cream Website, Admin and user links</h1>
+      <nav style={{ display: "flex", justifyContent: "space-around" }}>
+        <Link to="/user">Navigate to User</Link>
+
+        <Link to="/admin">Navigate To Admin</Link>
       </nav>
 
       <hr />
