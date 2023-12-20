@@ -38,6 +38,7 @@ router.post("/products", upload.single("image"), async (req, res) => {
   console.log("body recieved", req.body);
   try {
     const { name, flavor, price, quantity } = req.body;
+
     const image = req.file.buffer;
 
     const newProduct = new Product({ name, flavor, image, price, quantity });

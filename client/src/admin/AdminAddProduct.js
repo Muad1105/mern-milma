@@ -62,47 +62,58 @@ const AdminAddProduct = () => {
       <h2>Add Product</h2>
       <form onSubmit={handleSubmit}>
         <div className="add-product-form-inputs">
-          <input
-            type="text"
-            name="name"
-            placeholder="Name"
-            value={product.name}
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="price"
-            placeholder="Price"
-            value={product.price}
-            onChange={handleChange}
-          />
-          <select
-            type="text"
-            name="flavor"
-            placeholder="Flavor"
-            value={product.flavor}
-            onChange={handleChange}
-          >
-            <option value="" disabled>
-              Select
-            </option>
-            <option value="vanilla">Vanilla</option>
-            <option value="pista">Pista</option>
-            <option value="chocolate">Chocolate</option>
-          </select>
-          <input
-            type="file"
-            placeholder="Image"
-            name="image"
-            onChange={handleChange}
-          />
-          <input
-            type="text"
-            name="quantity"
-            value={product.quantity}
-            placeholder="Quantity"
-            onChange={handleChange}
-          />
+          <div className="name">
+            <label htmlFor="name">Name :</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              value={product.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="price">
+            <label htmlFor="price">Price : </label>
+            <input
+              type="text"
+              name="price"
+              placeholder="Price"
+              value={product.price}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="flavor">
+            <label htmlFor="flavor">Choose Flavor : </label>
+            <select
+              type="text"
+              name="flavor"
+              placeholder="Flavor"
+              value={product.flavor}
+              onChange={handleChange}
+            >
+              <option value="" disabled>
+                Select
+              </option>
+              <option value="vanilla">Vanilla</option>
+              <option value="pista">Pista</option>
+              <option value="chocolate">Chocolate</option>
+            </select>
+          </div>
+          <div>
+            <label htmlFor="image">Choose an Image : </label>
+            <input type="file" name="image" onChange={handleChange} />
+          </div>
+          <div className="quantity">
+            <label htmlFor="quantity">Quantity : </label>
+
+            <input
+              type="text"
+              name="quantity"
+              value={product.quantity}
+              placeholder="Quantity"
+              onChange={handleChange}
+            />
+          </div>
 
           {/* Add other input fields for flavor, image, price, quantity, section */}
           <button type="submit">Add</button>

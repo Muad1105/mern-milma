@@ -3,24 +3,36 @@
   flex-direction: column;
   padding: 30px 100px;
   border-bottom: 2px solid grey;
+  justify-content: flex-start;
+  align-items: center;
 }
 .admin-add-product {
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
+.add-product-form-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+  border: 20px solid #455377;
+  padding: 20px;
+  border-image: url("../../public/images/border.jpg") 30 stretch;
+}
+
 .add-product-form-inputs button {
   padding: 10px 50px;
   font-size: 17px;
 }
 
-.add-product-form-inputs {
-  display: flex;
-  /* flex-direction: column; */
-  width: 200px;
-  gap: 20px;
-}
-
 .add-product-form-inputs input {
   height: 35px;
+  margin: 20px;
+}
+
+input[type="file"] {
+  width: 100px;
+  height: 30px;
+  display: block;
 }
