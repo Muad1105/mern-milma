@@ -8,7 +8,7 @@ const AdminAddProduct = () => {
     name: "",
     flavor: "",
     image: null,
-    price: 0,
+    price: '',
     quantity: "",
   });
 
@@ -67,7 +67,7 @@ const AdminAddProduct = () => {
             <input
               type="text"
               name="name"
-              placeholder="Name"
+              placeholder="Enter Name"
               value={product.name}
               onChange={handleChange}
             />
@@ -77,7 +77,7 @@ const AdminAddProduct = () => {
             <input
               type="text"
               name="price"
-              placeholder="Price"
+              placeholder="Enter Price"
               value={product.price}
               onChange={handleChange}
             />
@@ -110,7 +110,7 @@ const AdminAddProduct = () => {
               type="text"
               name="quantity"
               value={product.quantity}
-              placeholder="Quantity"
+              placeholder="Enter Quantity"
               onChange={handleChange}
             />
           </div>
